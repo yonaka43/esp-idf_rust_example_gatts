@@ -1,0 +1,22 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+esp-idf-sys = { version = "0.31.6", features = ["binstart"] }
+esp-idf-svc = "0.41.4"
+embedded-svc = "0.21.3"
+toml-cfg = "0.1.3"
+log = "0.4.17"
+anyhow = "1.0.57"
+esp-idf-hal = "0.37.4"
+embedded-hal = "0.2.7"
+
+[build-dependencies]
+embuild = "0.29.1"
+anyhow = "1.0.57"
+bindgen = "0.60.1"
+uuid = { version = "1.1.1", features = ["v4"] }
